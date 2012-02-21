@@ -2,20 +2,22 @@
 html {
   margin-left: 80px;
   height: 100%;
+  min-height: 1048px;
 }
 
-/* line 5, ../sass/css.scss */
+/* line 6, ../sass/css.scss */
 body {
   width: 1100px;
   margin: auto;
   height: 100%;
+  min-height: 1048px;
 }
 
-/* line 12, ../sass/css.scss */
+/* line 14, ../sass/css.scss */
 header {
   padding-top: 60px;
 }
-/* line 15, ../sass/css.scss */
+/* line 17, ../sass/css.scss */
 header h1 {
   background: url(../img/sprites.png) -85px 7px no-repeat;
   height: 91px;
@@ -23,39 +25,39 @@ header h1 {
   background-color: #003366;
   float: left;
 }
-/* line 23, ../sass/css.scss */
+/* line 25, ../sass/css.scss */
 header nav {
   background-color: #003366;
   height: 91px;
   width: 640px;
   float: right;
 }
-/* line 25, ../sass/css.scss */
+/* line 27, ../sass/css.scss */
 header nav ul {
   width: 100%;
   height: 100%;
 }
-/* line 35, ../sass/css.scss */
+/* line 37, ../sass/css.scss */
 header nav li {
   float: left;
   height: 100%;
 }
-/* line 40, ../sass/css.scss */
+/* line 42, ../sass/css.scss */
 header nav li#quienes_li:hover {
   background: url(../img/sprites.png) -868px -5px no-repeat;
   height: 105px;
 }
-/* line 47, ../sass/css.scss */
+/* line 49, ../sass/css.scss */
 header nav li#podemos_li:hover {
   background: url(../img/sprites.png) -1092px -5px no-repeat;
   height: 105px;
 }
-/* line 55, ../sass/css.scss */
+/* line 57, ../sass/css.scss */
 header nav li#contacto_li:hover {
   background: url(../img/sprites.png) -1115px -127px no-repeat;
   height: 105px;
 }
-/* line 64, ../sass/css.scss */
+/* line 66, ../sass/css.scss */
 header nav a {
   height: 36px;
   display: block;
@@ -63,40 +65,41 @@ header nav a {
   margin-top: 33px;
   float: left;
 }
-/* line 71, ../sass/css.scss */
+/* line 73, ../sass/css.scss */
 header nav a:hover {
   background-color: #CC0000;
 }
 
-/* line 80, ../sass/css.scss */
+/* line 82, ../sass/css.scss */
 #quienes {
   background: url(../img/sprites.png) -109px -95px no-repeat;
   width: 204px;
   margin-left: 13px;
 }
 
-/* line 88, ../sass/css.scss */
+/* line 90, ../sass/css.scss */
 #podemos {
   background: url(../img/sprites.png) -323px -95px no-repeat;
   width: 279px;
   margin-left: 10px;
 }
 
-/* line 94, ../sass/css.scss */
+/* line 96, ../sass/css.scss */
 #contacto {
   background: url(../img/sprites.png) -605px -95px no-repeat;
   width: 119px;
   margin-left: 13px;
 }
 
-/* line 101, ../sass/css.scss */
+/* line 103, ../sass/css.scss */
 #main {
   position: relative;
   margin: 0 auto -161px;
   height: 100%;
+  min-height: 1048px;
 }
 
-/* line 107, ../sass/css.scss */
+/* line 110, ../sass/css.scss */
 #promo {
   background-color: #EDEDED;
   background: url(../img/sprites.png) 0px -630px no-repeat;
@@ -107,7 +110,7 @@ header nav a:hover {
   border-top-style: solid;
   border-width: 1px;
 }
-/* line 117, ../sass/css.scss */
+/* line 120, ../sass/css.scss */
 #promo .section-1 {
   background: url(../img/sprites.png) 1px -175px no-repeat;
   height: 170px;
@@ -115,7 +118,7 @@ header nav a:hover {
   margin-top: 106px;
   float: left;
 }
-/* line 125, ../sass/css.scss */
+/* line 128, ../sass/css.scss */
 #promo .section-2 {
   background: url(../img/sprites.png) -339px -174px no-repeat;
   height: 170px;
@@ -124,7 +127,7 @@ header nav a:hover {
   float: left;
   margin-left: 60px;
 }
-/* line 134, ../sass/css.scss */
+/* line 137, ../sass/css.scss */
 #promo .section-3 {
   background: url(../img/sprites.png) -675px -131px no-repeat;
   height: 208px;
@@ -134,13 +137,13 @@ header nav a:hover {
   margin-left: 47px;
 }
 
-/* line 144, ../sass/css.scss */
+/* line 147, ../sass/css.scss */
 #info {
   height: 190px;
   width: 1100px;
   margin-top: 15px;
 }
-/* line 149, ../sass/css.scss */
+/* line 152, ../sass/css.scss */
 #info .section-1 {
   width: 313px;
   height: 171px;
@@ -151,7 +154,7 @@ header nav a:hover {
   float: left;
   margin-left: 50px;
 }
-/* line 161, ../sass/css.scss */
+/* line 164, ../sass/css.scss */
 #info .section-1 div {
   background: url(../img/sprites.png) -57px -394px no-repeat;
   height: 171px;
@@ -160,7 +163,7 @@ header nav a:hover {
   float: left;
   margin-left: -1px;
 }
-/* line 173, ../sass/css.scss */
+/* line 176, ../sass/css.scss */
 #info .section-2 {
   width: 313px;
   height: 171px;
@@ -171,7 +174,7 @@ header nav a:hover {
   float: left;
   margin-left: 30px;
 }
-/* line 184, ../sass/css.scss */
+/* line 187, ../sass/css.scss */
 #info .section-2 div {
   background: url(../img/sprites.png) -396px -383px no-repeat;
   height: 171px;
@@ -180,7 +183,7 @@ header nav a:hover {
   float: left;
   margin-left: -1px;
 }
-/* line 196, ../sass/css.scss */
+/* line 199, ../sass/css.scss */
 #info .section-3 {
   width: 313px;
   height: 171px;
@@ -191,7 +194,7 @@ header nav a:hover {
   float: left;
   margin-left: 30px;
 }
-/* line 207, ../sass/css.scss */
+/* line 210, ../sass/css.scss */
 #info .section-3 div {
   background: url(../img/sprites.png) -736px -397px no-repeat;
   height: 171px;
@@ -201,39 +204,39 @@ header nav a:hover {
   margin-left: -1px;
 }
 
-/* line 220, ../sass/css.scss */
+/* line 223, ../sass/css.scss */
 #otro {
   height: 277px;
   width: 1100px;
   margin-top: 15px;
 }
-/* line 226, ../sass/css.scss */
+/* line 229, ../sass/css.scss */
 #otro .section-1 {
   float: left;
 }
-/* line 230, ../sass/css.scss */
+/* line 233, ../sass/css.scss */
 #otro .section-1 a {
   margin-left: 120px;
   width: 164px;
   height: 45px;
   background: url(../img/sprites.png) -123px -576px no-repeat;
 }
-/* line 238, ../sass/css.scss */
+/* line 241, ../sass/css.scss */
 #otro .section-2 {
   float: left;
 }
-/* line 242, ../sass/css.scss */
+/* line 245, ../sass/css.scss */
 #otro .section-2 a {
   margin-left: 175px;
   width: 194px;
   height: 45px;
   background: url(../img/sprites.png) -395px -576px no-repeat;
 }
-/* line 250, ../sass/css.scss */
+/* line 253, ../sass/css.scss */
 #otro .section-3 {
   float: left;
 }
-/* line 254, ../sass/css.scss */
+/* line 257, ../sass/css.scss */
 #otro .section-3 a {
   margin-left: 130px;
   width: 225px;
@@ -241,19 +244,19 @@ header nav a:hover {
   background: url(../img/sprites.png) -810px -576px no-repeat;
 }
 
-/* line 264, ../sass/css.scss */
+/* line 267, ../sass/css.scss */
 .push {
   height: 161px;
 }
 
-/* line 268, ../sass/css.scss */
+/* line 271, ../sass/css.scss */
 footer {
   color: white;
   background-color: #333333;
   height: 110px;
   padding-top: 51px;
 }
-/* line 274, ../sass/css.scss */
+/* line 277, ../sass/css.scss */
 footer a#hwm {
   display: block;
   height: 62px;
@@ -262,14 +265,14 @@ footer a#hwm {
   margin-left: 20px;
   float: left;
 }
-/* line 284, ../sass/css.scss */
+/* line 287, ../sass/css.scss */
 footer div {
   margin-top: 5px;
   float: left;
   clear: right;
   margin-left: 50px;
 }
-/* line 291, ../sass/css.scss */
+/* line 294, ../sass/css.scss */
 footer div #twitter {
   margin-top: 5px;
   width: 20px;
@@ -279,7 +282,7 @@ footer div #twitter {
   background: url(../img/sprites.png) -756px -37px no-repeat;
   margin-left: 5px;
 }
-/* line 301, ../sass/css.scss */
+/* line 304, ../sass/css.scss */
 footer div #fb {
   margin-top: 5px;
   width: 20px;
