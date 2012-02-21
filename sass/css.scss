@@ -28,7 +28,7 @@ header{
             height:36px;
             display:block;
             margin-left:25px;
-            margin-top:35px;
+            margin-top:40px;
             float:left;
          }
     }
@@ -49,4 +49,162 @@ header{
 #contacto{
     background: url(../img/sprites.png) -605px -95px no-repeat;
     width:106px;
+}
+
+#promo{
+    background-color:#EDEDED;
+    background: url(../img/sprites.png) -0px -630px no-repeat;
+    height:277px;
+    width:1100px;
+    margin-top: -55px;
+    border-color:#CCCCCC;
+    border-top-style:solid  ;
+    border-width:1px;
+
+    .section-1{
+        background: url(../img/sprites.png) -0px -174px no-repeat;
+        height:170px;
+        width:284px;
+        margin-top: 106px;
+        float:left;
+    }
+
+    .section-2{
+        background: url(../img/sprites.png) -339px -174px no-repeat;
+        height:170px;
+        width:284px;
+        margin-top: 106px;
+        float:left;
+        margin-left:60px;
+    }
+
+    .section-3{
+        background: url(../img/sprites.png) -675px -131px no-repeat;
+        height:208px;
+        width:424px;
+        margin-top: 62px;
+        float:left;
+        margin-left: 47px
+    }
+}
+
+#info{
+    height:277px;
+    width:1100px;
+    margin-top: 15px;
+
+    .section-1{
+
+        width:313px;
+        height:171px;
+        background-color:#EDEDED;
+        border-color:#CCCCCC;
+        border-style:solid  ;
+        border-width:1px;
+        float:left;
+        margin-left:50px;
+
+
+        div{
+
+            background: url(../img/sprites.png) -57px -394px no-repeat;
+            height:171px;
+            width:327px;
+            margin-top: 20px;
+            float:left;
+            margin-left:-1px;
+
+        }
+    }
+
+    .section-2{
+
+        width:313px;
+        height:171px;
+        background-color:#EDEDED;
+        border-color:#CCCCCC;
+        border-style:solid  ;
+        border-width:1px;
+        float:left;
+        margin-left:30px;
+
+        div{
+
+            background: url(../img/sprites.png) -396px -383px no-repeat;
+            height:171px;
+            width:327px;
+            margin-top: 9px;
+            float:left;
+            margin-left:-1px;
+
+        }
+    }
+
+    .section-3{
+
+        width:313px;
+        height:171px;
+        background-color:#EDEDED;
+        border-color:#CCCCCC;
+        border-style:solid  ;
+        border-width:1px;
+        float:left;
+        margin-left:30px;
+
+        div{
+
+            background: url(../img/sprites.png) -736px -397px no-repeat;
+            height:171px;
+            width:327px;
+            margin-top: 23px;
+            float:left;
+            margin-left:-1px;
+
+        }
+    }
+}
+footer{
+    color:white;
+    background-color:#333333;
+    height: 110px;
+    padding-top:51px;
+
+    a#hwm{
+        display:block;
+        height:62px;
+        width:121px;
+        background: url(../img/sprites.png) -586px -14px no-repeat;
+        margin-left:20px;
+        float:left;
+
+    }
+
+    div{
+
+        margin-top:5px;
+        float:left;
+        clear:right;
+        margin-left: 50px;
+
+        #twitter{
+            margin-top:5px;
+            width:20px;
+            height:15px;
+            display:block;
+            float:left;
+            background: url(../img/sprites.png) -756px -37px no-repeat;
+            margin-left:5px;
+        }
+
+        #fb{
+            margin-top:5px;
+            width:20px;
+            height:15px;
+            display:block;
+            float:left;
+            background: url(../img/sprites.png) -786px -37px no-repeat;
+            margin-left:10px;
+        }
+    }
+
 }
