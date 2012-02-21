@@ -1,9 +1,11 @@
 html{
     margin-left:80px;
+    height: 100%;
 }
 body{
     width: 1100px;
     margin: auto;
+    height: 100%;
 }
 
 
@@ -11,25 +13,64 @@ header{
     padding-top:60px;
 
     h1 {
-        background: url(../img/sprites.png) -85px 13px no-repeat;
-        height:105px;
+        background: url(../img/sprites.png) -85px 7px no-repeat;
+        height:91px;
         width:430px;
         background-color:#003366;
         float:left;
     }
 
     nav{
+
+        ul{
+            width:100%;
+            height:100%;
+        }
+
          background-color:#003366;
-         height:105px;
+         height:91px;
          width:640px;
          float:right;
+
+         li{
+
+            float: left;
+            height:100%;
+
+             &#quienes_li:hover{
+
+                  background:url(../img/sprites.png) -868px -5px no-repeat;;
+                  height:105px;
+
+             }
+
+             &#podemos_li:hover{
+
+                  background:url(../img/sprites.png) -1092px -5px no-repeat;;
+                  height:105px;
+
+
+             }
+
+             &#contacto_li:hover{
+
+                 background: url(../img/sprites.png) -1115px -127px no-repeat;
+                  height:105px;
+
+             }
+
+         }
 
          a {
             height:36px;
             display:block;
             margin-left:25px;
-            margin-top:40px;
+            margin-top:33px;
             float:left;
+
+            &:hover{
+                background-color:#CC0000;
+            }
          }
     }
 
@@ -38,17 +79,29 @@ header{
 
 #quienes{
     background: url(../img/sprites.png) -109px -95px no-repeat;
-    width:178px;
+    width:204px;
+    margin-left:13px;
+
 }
+
 
 #podemos{
     background: url(../img/sprites.png) -323px -95px no-repeat;
-    width:263px;
+    width:279px;
+    margin-left:10px;
 }
 
 #contacto{
     background: url(../img/sprites.png) -605px -95px no-repeat;
-    width:106px;
+    width:119px;
+    margin-left:13px;
+}
+
+
+#main{
+    position: relative;
+    margin: 0 auto -161px;
+    height: 100%;
 }
 
 #promo{
@@ -62,7 +115,7 @@ header{
     border-width:1px;
 
     .section-1{
-        background: url(../img/sprites.png) -0px -174px no-repeat;
+        background: url(../img/sprites.png) 1px -175px no-repeat;
         height:170px;
         width:284px;
         margin-top: 106px;
@@ -89,7 +142,7 @@ header{
 }
 
 #info{
-    height:277px;
+    height:190px;
     width:1100px;
     margin-top: 15px;
 
@@ -163,6 +216,55 @@ header{
         }
     }
 }
+
+#otro{
+
+    height:277px;
+    width:1100px;
+    margin-top: 15px;
+
+    .section-1{
+
+        float:left;
+
+        a{
+            margin-left:120px;
+            width:164px;
+            height:45px;
+            background: url(../img/sprites.png) -123px -576px no-repeat;
+        }
+    }
+
+    .section-2{
+
+        float:left;
+
+        a{
+            margin-left:175px;
+            width:194px;
+            height:45px;
+            background: url(../img/sprites.png) -395px -576px no-repeat;
+        }
+    }
+
+    .section-3{
+
+        float:left;
+
+        a{
+            margin-left:130px;
+            width:225px;
+            height:45px;
+            background: url(../img/sprites.png) -810px -576px no-repeat;
+        }
+    }
+
+}
+
+.push{
+    height: 161px;
+}
+
 footer{
     color:white;
     background-color:#333333;
