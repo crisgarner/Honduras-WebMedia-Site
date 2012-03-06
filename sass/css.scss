@@ -530,7 +530,7 @@ footer{
         margin-top: -55px;
 
         h2{
-            background:url(../img/sprites_sections.png) -477px -559px no-repeat;
+            background:url(../img/sprites_sections.png) -1003px -677px no-repeat;
             width:246px;
             height:52px;
             display:block;
@@ -540,12 +540,252 @@ footer{
     }
 
     .suit_imagen{
-        background:url(../img/sprites_sections.png) -47px -183px no-repeat;
+       background:url(../img/sprites_sections.png) -1052px -861px no-repeat;
         width:232px;
-        height:368px;
+        height:445px;
         display:block;
-        margin-top: -21px;
+        margin-top: -35px;
         margin-left:15px;
         float:left;
+    }
+
+    #llamenos{
+        margin-top:60px;
+        float:left;
+
+        h3{
+            width:104px;
+            height:33px;
+            background:url(../img/sprites_sections.png) -47px -1137px no-repeat;
+            margin-left:1px;
+            margin-right:1px;
+        }
+
+        p{
+            width:196px;
+            height:43px;
+            background-color:#EDEDED;
+            border-color:#CCCCCC;
+            border-style:solid  ;
+            border-width:1px;
+
+            span{
+                margin-top:3px;
+                display:block;
+                width:196px;
+                height:43px;
+                background:url(../img/sprites_sections.png) -47px -1170px no-repeat;
+            }
+
+            a{
+                display:block;
+                width:196px;
+                height:43px;
+            }
+
+        }
+
+    }
+
+    #skype{
+        float:left;
+        margin-top:60px;
+        margin-left:40px;
+
+         h3{
+            width:104px;
+            height:33px;
+            background:url(../img/sprites_sections.png) -294px -1137px no-repeat;
+            margin-left:1px;
+            margin-right:1px;
+        }
+
+        p{
+            width:196px;
+            height:43px;
+            background-color:#EDEDED;
+            border-color:#CCCCCC;
+            border-style:solid  ;
+            border-width:1px;
+
+            span{
+                margin-top:3px;
+                display:block;
+                width:196px;
+                height:43px;
+                background:url(../img/sprites_sections.png) -315px -1170px no-repeat;
+                margin-left:15px;
+            }
+
+        }
+
+    }
+
+    #redes_sociales{
+        float:left;
+        margin-top:60px;
+        margin-left:40px;
+
+         h3{
+            width:104px;
+            height:33px;
+            background:url(../img/sprites_sections.png) -294px -1137px no-repeat;
+            margin-left:1px;
+            margin-right:1px;
+        }
+
+        a{
+            display:block;
+            width:156px;
+            height:37px;
+        }
+
+        .facebook{
+            float:left;
+            width:156px;
+            height:37px;
+            background:url(../img/sprites_sections.png) -696px -1170px no-repeat;
+        }
+
+        .twitter{
+            float:left;
+            width:156px;
+            height:37px;
+            background:url(../img/sprites_sections.png) -540px -1170px no-repeat;
+        }
+
+    }
+
+    #email{
+        width:700px;
+        height:85px;
+        margin-top:165px;
+
+         h3{
+            width:104px;
+            height:33px;
+            background:url(../img/sprites_sections.png) -47px -1230px no-repeat;
+            margin-left:1px;
+            margin-right:1px;
+        }
+
+        p{
+            width:396px;
+            height:43px;
+            background-color:#EDEDED;
+            border-color:#CCCCCC;
+            border-style:solid  ;
+            border-width:1px;
+
+            span{
+                margin-top:3px;
+                display:block;
+                width:387px;
+                height:43px;
+                background:url(../img/sprites_sections.png) -52px -1263px no-repeat;
+                margin-left:5px;
+            }
+
+        }
+
+        a{
+            display:block;
+            width:396px;
+            height:43px;
+        }
+
+    }
+
+    #formulario{
+        width:600px;
+        float: left;
+
+        label{
+            float:left;
+            margin-top:10px;
+
+            &.nombre{
+                height:21px;
+                width:70px;
+                background:url(../img/sprites_sections.png) -491px -1250px no-repeat;
+            }
+
+            &.email{
+                height:21px;
+                width:70px;
+                background:url(../img/sprites_sections.png) -840px -1251px no-repeat;
+            }
+
+            &.empresa{
+                clear:left;
+                height:21px;
+                width:70px;
+                background:url(../img/sprites_sections.png) -495px -1299px no-repeat;
+            }
+
+            &.telefono{
+                height:21px;
+                width:70px;
+                background:url(../img/sprites_sections.png) -839px -1299px no-repeat;
+            }
+
+            &.mensaje{
+                clear:left;
+                height:21px;
+                width:70px;
+                background:url(../img/sprites_sections.png) -494px -1349px no-repeat;
+            }
+        }
+
+        form{
+            padding-left:40px;
+            padding-top:30px;
+            width:760px;
+            height:270px;
+            background-color:#EDEDED;
+            border-color:#CCCCCC;
+            border-style:solid  ;
+            border-width:1px;
+
+            input[type="text"]{
+                width:277px;
+                height:32px;
+                border-color:#CCCCCC;
+                border-style:solid  ;
+                border-width:1px;
+                float:left;
+                margin-bottom:10px;
+            }
+
+            textarea{
+                width:623px;
+                height:134px;
+                border-color:#CCCCCC;
+                border-style:solid  ;
+                border-width:1px;
+                float:left;
+                resize: none;
+            }
+
+            input[type="submit"]{
+                width:92px;
+                height:33px;
+                background-color:#CC0000;
+                float: right;
+                position: relative;
+                top: 39px;
+                left:-10px;
+                background:url(../img/sprites_sections.png) -665px -1305px no-repeat;
+            }
+        }
+
+        h3{
+            margin-top:20px;
+            display:block;
+            width:387px;
+            height:43px;
+            background:url(../img/sprites_sections.png) -47px -1315px no-repeat;
+            margin-left:5px;
+        }
     }
 }
