@@ -1,13 +1,13 @@
 html{
     margin-left:80px;
     height: 100%;
-    min-height: 1048px;
+    min-height: 944px;
 }
 body{
     width: 1100px;
     margin: auto;
     height: 100%;
-    min-height: 1048px;
+    min-height: 944px;
 }
 
 
@@ -36,17 +36,21 @@ header{
 
          li{
 
+            &:hover{
+                cursor:pointer;
+            }
+
             float: left;
             height:100%;
 
-             &#quienes_li:hover{
+             &#quienes_li:hover, &#quienes_li.selected{
 
                   background:url(../img/sprites.png) -868px -5px no-repeat;;
                   height:105px;
 
              }
 
-             &#podemos_li:hover{
+             &#podemos_li:hover,&#podemos_li.selected{
 
                   background:url(../img/sprites.png) -1092px -5px no-repeat;;
                   height:105px;
@@ -54,7 +58,7 @@ header{
 
              }
 
-             &#contacto_li:hover{
+             &#contacto_li:hover,&#contacto_li.selected{
 
                  background: url(../img/sprites.png) -1115px -127px no-repeat;
                   height:105px;
@@ -104,7 +108,19 @@ header{
     position: relative;
     margin: 0 auto -161px;
     height: 100%;
-    min-height: 1048px;
+    min-height: 944px;
+
+    &.quienes_page{
+        margin: 0 auto -10px;
+    }
+
+    &.podemos_page{
+        margin: 0 auto -10px;
+    }
+
+    &.contacto_page{
+        margin: 0 auto -10px;
+    }
 }
 
 #promo{
@@ -208,7 +224,6 @@ header{
         margin-left:30px;
 
         div{
-
             background: url(../img/sprites.png) -736px -397px no-repeat;
             height:171px;
             width:327px;
@@ -273,7 +288,7 @@ footer{
     background-color:#333333;
     height: 110px;
     padding-top:51px;
-
+    position:relative;
     a#hwm{
         display:block;
         height:62px;
@@ -312,4 +327,225 @@ footer{
         }
     }
 
+}
+
+
+/******************************************CSS SECTIONS**********************************************/
+
+
+.quienes_page{
+
+    .titulo{
+        background:url(../img/sprites_sections.png) 0 0 no-repeat;
+        width:1100px;
+        height:176px;
+        display:block;
+        margin-top: -55px;
+
+        h2{
+            background:url(../img/sprites_sections.png) -477px -559px no-repeat;
+            width:246px;
+            height:52px;
+            display:block;
+            margin-top: 95px;
+            margin-left: 15px;
+        }
+    }
+
+    .suit_imagen{
+        background:url(../img/sprites_sections.png) -47px -183px no-repeat;
+        width:232px;
+        height:368px;
+        display:block;
+        margin-top: -21px;
+        margin-left:15px;
+        float:left;
+    }
+
+    p{
+        background:url(../img/sprites_sections.png) -477px -614px no-repeat;
+        width:513px;
+        height:57px;
+        display:block;
+        margin-top:100px;
+        margin-left:25px;
+        float:left;
+    }
+
+    .video{
+        background:url(../img/sprites_sections.png) -21px -564px no-repeat;
+        width:402px;
+        height:241px;
+        display:block;
+        margin-top:15px;
+        margin-left:1px;
+        float:left;
+        clear:left;
+
+        &:hover{
+            cursor:pointer;
+        }
+    }
+
+    .estos_somos{
+        background:url(../img/sprites_sections.png) -438px -260px no-repeat;
+        width:615px;
+        height:241px;
+        display:block;
+        margin-top:15px;
+        margin-left:50px;
+        float:left;
+    }
+
+}
+
+.podemos_page{
+
+    .titulo{
+        background:url(../img/sprites_sections.png) 0 0 no-repeat;
+        width:1100px;
+        height:176px;
+        display:block;
+        margin-top: -55px;
+
+        h2{
+            background:url(../img/sprites_sections.png) -477px -689px no-repeat;
+            width:358px;
+            height:52px;
+            display:block;
+            margin-top: 95px;
+            margin-left: 15px;
+        }
+    }
+
+    .suit_imagen{
+        background:url(../img/sprites_sections.png) -904px -873px no-repeat;
+        width:145px;
+        height:368px;
+        display:block;
+        margin-top: -21px;
+        margin-left:75px;
+        float:left;
+    }
+
+    .section_container{
+        float:left;
+        margin-left:15px;
+
+        .section-1{
+            background-color:#EDEDED;
+            border-width:1px;
+            border-color:#CCCCCC;
+            border-style:solid;
+            width:800px;
+            height:200px;
+            display:block;
+            margin-left:15px;
+            margin-top:25px;
+
+            h3{
+                width:220px;
+                height:33px;
+                background:url(../img/sprites_sections.png) -477px -758px no-repeat;
+                margin-top:15px;
+                margin-left:15px;
+            }
+
+            p{
+                width:771px;
+                height:39px;
+                background:url(../img/sprites_sections.png) -477px -797px no-repeat;
+                margin-top:10px;
+                margin-left:15px;
+            }
+        }
+
+        .section-2{
+            background:url(../img/sprites_sections.png) -22px -861px no-repeat;
+            width:802px;
+            height:252px;
+            display:block;
+            margin-left:15px;
+            margin-top:25px;
+
+            p{
+                margin-left:170px;
+                margin-top:5px;
+                display:block;
+                height:112px;
+                width:388px;
+                background:url(../img/sprites_sections.png) -35px -1359px no-repeat;
+            }
+
+            h3{
+                width:139px;
+                height:33px;
+                background:url(../img/sprites_sections.png) -1003px -559px no-repeat;
+                margin-top:15px;
+                margin-left:15px;
+            }
+
+
+            ul{
+                margin-left:10px;
+                margin-top:28px;
+                display:block;
+                height:54px;
+                width:739px;
+                background:url(../img/sprites_sections.png) -475px -1394px no-repeat;
+            }
+        }
+
+        .section-3{
+            background-color:#CC0000;
+            border-width:1px;
+            border-color:#CCCCCC;
+            border-style:solid;
+            width:800px;
+            height:100px;
+            display:block;
+            margin-left:15px;
+            margin-top:25px;
+
+            h3{
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:25px;
+                display:block;
+                height:61px;
+                width:425px;
+                background:url(../img/sprites_sections.png) -528px -193px no-repeat;
+            }
+        }
+    }
+}
+
+.contacto_page{
+
+    .titulo{
+        background:url(../img/sprites_sections.png) 0 0 no-repeat;
+        width:1100px;
+        height:176px;
+        display:block;
+        margin-top: -55px;
+
+        h2{
+            background:url(../img/sprites_sections.png) -477px -559px no-repeat;
+            width:246px;
+            height:52px;
+            display:block;
+            margin-top: 95px;
+            margin-left: 15px;
+        }
+    }
+
+    .suit_imagen{
+        background:url(../img/sprites_sections.png) -47px -183px no-repeat;
+        width:232px;
+        height:368px;
+        display:block;
+        margin-top: -21px;
+        margin-left:15px;
+        float:left;
+    }
 }
