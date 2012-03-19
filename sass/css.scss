@@ -1,5 +1,5 @@
 html{
-    margin-left:80px;
+    /*margin-left:80px;*/
     height: 100%;
     min-height: 944px;
 }
@@ -251,6 +251,12 @@ header{
             height:45px;
             background: url(../img/sprites.png) -123px -576px no-repeat;
         }
+        p{
+            width:364px;
+            margin-left:20px;
+            text-align:center;
+            margin-top:10px;
+        }
     }
 
     .section-2{
@@ -258,7 +264,7 @@ header{
         float:left;
 
         a{
-            margin-left:175px;
+            margin-left:70px;
             width:194px;
             height:45px;
             background: url(../img/sprites.png) -395px -576px no-repeat;
@@ -274,6 +280,10 @@ header{
             width:225px;
             height:45px;
             background: url(../img/sprites.png) -810px -576px no-repeat;
+        }
+        iframe{
+            margin-left:240px;
+            width:200px !important;
         }
     }
 
@@ -363,13 +373,17 @@ footer{
     }
 
     p{
-        background:url(../img/sprites_sections.png) -477px -614px no-repeat;
+        /*background:url(../img/sprites_sections.png) -477px -614px no-repeat;*/
         width:513px;
         height:57px;
         display:block;
         margin-top:100px;
         margin-left:25px;
         float:left;
+
+        &.second{
+            margin-top:50px;
+        }
     }
 
     .video{
@@ -520,6 +534,10 @@ footer{
     }
 }
 
+#quiero_click{
+    cursor: pointer;
+}
+
 .contacto_page{
 
     .titulo{
@@ -627,9 +645,9 @@ footer{
         margin-left:40px;
 
          h3{
-            width:104px;
+            width:165px;
             height:33px;
-            background:url(../img/sprites_sections.png) -294px -1137px no-repeat;
+            background:url(../img/sprites_sections.png) -540px -1137px no-repeat;
             margin-left:1px;
             margin-right:1px;
         }
