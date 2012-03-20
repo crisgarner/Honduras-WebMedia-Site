@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/css.css">
+  <link type="text/css" rel="Stylesheet" href="css/jquery.validity.css" />
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -64,7 +65,7 @@
               </div>
               <div id="redes_sociales">
                 <h3 class="ir">Redes Sociales</h3>
-                <div class="twitter ir"><a href="Javascript:void(0)">Twitter</a></div><div class="facebook ir"><a href="Javascript:void(0)">Facebook</a></div>
+                <div class="twitter ir"><a href="http://twitter.com/hwm" target="_blank">Twitter</a></div><div class="facebook ir"><a href="http://www.facebook.com/honduraswebmedia" target="_blank">Facebook</a></div>
               </div>
               <div id="email" class="clearfix">
                 <h3 class="ir">Email</h3>
@@ -72,16 +73,16 @@
               </div>
               <div id="formulario">
                 <h3 class="ir">Escribanos</h3>
-                  <form>
+                  <form id="form_contacto">
                     <label for = "nombre" class="ir nombre">Nombre</label>
-                    <input type="text" id="nombre" />
+                    <input type="text" id="nombre" class="required" />
                     <label for = "email_form" class="ir email">Email</label>
-                    <input type="text" id="email_form" />
+                    <input type="text" id="email_form" class="required"/>
                     <label for = "empresa" class="ir empresa">Empresa</label>
                     <input type="text" id="empresa" />
                     <label for = "telefono_form" class="ir telefono"> Teléfono</label>
                     <input type="text" id="telefono_form" />
-                    <label for = "mensaje" class="ir mensaje">Mensaje</label>
+                    <label for = "mensaje" class="ir mensaje ">Mensaje</label>
                     <textarea id="mensaje"></textarea>
                     <input type="submit" class="ir" />
                   </form>
@@ -109,7 +110,9 @@
 
   <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
+  <script src="js/jquery.validity.min.js"></script>
   <script src="js/script.js"></script>
+
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.

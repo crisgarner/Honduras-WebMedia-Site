@@ -241,7 +241,7 @@ header nav a:hover {
 #otro .section-1 p {
   width: 364px;
   margin-left: 20px;
-  text-align: center;
+  text-align: justify;
   margin-top: 10px;
 }
 /* line 262, ../sass/css.scss */
@@ -681,48 +681,55 @@ footer div #fb {
   height: 43px;
 }
 /* line 717, ../sass/css.scss */
+.contacto_page .gracias {
+  margin-top: 34px;
+  font-size: 23px;
+  width: 785px;
+  color: #333333;
+}
+/* line 724, ../sass/css.scss */
 .contacto_page #formulario {
   width: 600px;
   float: left;
 }
-/* line 721, ../sass/css.scss */
+/* line 728, ../sass/css.scss */
 .contacto_page #formulario label {
   float: left;
   margin-top: 10px;
 }
-/* line 725, ../sass/css.scss */
+/* line 732, ../sass/css.scss */
 .contacto_page #formulario label.nombre {
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -491px -1250px no-repeat;
 }
-/* line 731, ../sass/css.scss */
+/* line 738, ../sass/css.scss */
 .contacto_page #formulario label.email {
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -840px -1251px no-repeat;
 }
-/* line 737, ../sass/css.scss */
+/* line 744, ../sass/css.scss */
 .contacto_page #formulario label.empresa {
   clear: left;
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -495px -1299px no-repeat;
 }
-/* line 744, ../sass/css.scss */
+/* line 751, ../sass/css.scss */
 .contacto_page #formulario label.telefono {
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -839px -1299px no-repeat;
 }
-/* line 750, ../sass/css.scss */
+/* line 757, ../sass/css.scss */
 .contacto_page #formulario label.mensaje {
   clear: left;
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -494px -1349px no-repeat;
 }
-/* line 758, ../sass/css.scss */
+/* line 767, ../sass/css.scss */
 .contacto_page #formulario form {
   padding-left: 40px;
   padding-top: 30px;
@@ -733,7 +740,7 @@ footer div #fb {
   border-style: solid;
   border-width: 1px;
 }
-/* line 768, ../sass/css.scss */
+/* line 777, ../sass/css.scss */
 .contacto_page #formulario form input[type="text"] {
   width: 277px;
   height: 32px;
@@ -743,7 +750,7 @@ footer div #fb {
   float: left;
   margin-bottom: 10px;
 }
-/* line 778, ../sass/css.scss */
+/* line 787, ../sass/css.scss */
 .contacto_page #formulario form textarea {
   width: 623px;
   height: 134px;
@@ -753,7 +760,7 @@ footer div #fb {
   float: left;
   resize: none;
 }
-/* line 788, ../sass/css.scss */
+/* line 797, ../sass/css.scss */
 .contacto_page #formulario form input[type="submit"] {
   width: 92px;
   height: 33px;
@@ -764,7 +771,7 @@ footer div #fb {
   left: -10px;
   background: url(../img/sprites_sections.png) -665px -1305px no-repeat;
 }
-/* line 800, ../sass/css.scss */
+/* line 811, ../sass/css.scss */
 .contacto_page #formulario h3 {
   margin-top: 20px;
   display: block;

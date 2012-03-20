@@ -254,7 +254,7 @@ header{
         p{
             width:364px;
             margin-left:20px;
-            text-align:center;
+            text-align:justify;
             margin-top:10px;
         }
     }
@@ -714,6 +714,13 @@ footer{
 
     }
 
+    .gracias{
+            margin-top: 34px;
+            font-size: 23px;
+            width: 785px;
+            color:#333333;
+    }
+
     #formulario{
         width:600px;
         float: left;
@@ -755,6 +762,8 @@ footer{
             }
         }
 
+
+
         form{
             padding-left:40px;
             padding-top:30px;
@@ -795,6 +804,8 @@ footer{
                 left:-10px;
                 background:url(../img/sprites_sections.png) -665px -1305px no-repeat;
             }
+
+
         }
 
         h3{
