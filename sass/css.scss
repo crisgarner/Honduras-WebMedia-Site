@@ -399,16 +399,80 @@ footer{
         &:hover{
             cursor:pointer;
         }
+
+        video{
+            background: black;
+
+        }
     }
 
     .estos_somos{
         background:url(../img/sprites_sections.png) -438px -260px no-repeat;
-        width:615px;
+        width:595px;
         height:241px;
         display:block;
         margin-top:15px;
         margin-left:50px;
         float:left;
+        padding-left: 20px;
+
+        .employee_container{
+           margin-top: 80px;
+            width: 92px;
+            height: 98px;
+            float: left;
+
+            .descripcion{
+                display: none;
+                width: 300px;
+                &.leo{
+                    width: 250px;
+                    h3{
+                        position: relative;
+                        top: -72px;
+                        left: 105px;
+                        font-size: 22px;
+                    }
+                    ul{
+                        position: relative;
+                        top: -65px;
+                        left: 80px;
+                    }
+                    
+                }
+                &.cristian{
+                    h3{
+                        position: relative;
+                        top: -72px;
+                        left: 105px;
+                        font-size: 22px;
+                    }
+                    ul{
+                        position: relative;
+                        top: -55px;
+                        left: 80px;
+                    }
+                    
+                }
+            }
+
+        }
+
+        .employee{
+            width: 92px;
+            height: 98px;
+            
+
+            &.leo{
+                background: url(../img/sprites_sections.png) -309px -1491px no-repeat;
+                cursor: pointer;
+            }
+
+            &.cristian{
+                background: url(../img/sprites_sections.png) -309px -1617px no-repeat;
+                cursor: pointer;
+            }
+        }
     }
 
 }

@@ -99,3 +99,33 @@ $("#form_contacto").submit(function(e){
     return false;
 
 });
+
+///Employees
+
+
+$(".employee_container").click(function(){
+    if ($(this).hasClass('open')) {
+        $(this).removeClass("open");
+        $(".descripcion").fadeOut(0);
+        $(".employee_container").animate({
+            width: "92px",
+            marginTop:"80px"
+        });
+    }else{
+        $(".employee_container").removeClass("open");
+        $(this).addClass("open");
+        $(".descripcion").fadeOut(0);
+        $(".employee_container").animate({
+            width: "92px",
+            marginTop:"80px"
+        });
+        var x = $(this).children().eq(1);
+        $(this).animate({
+            width: "330px",
+            marginTop:"30px"
+        }).queue(function(){
+            x.fadeIn(600);
+            $(this).dequeue();
+        });     
+    }
+});
