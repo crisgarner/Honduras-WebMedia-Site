@@ -5,7 +5,7 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
@@ -31,6 +31,30 @@
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script type="text/javascript">
+
+  //BROWSER FIXES
+    function getBrowser() {
+
+      var sBrowser = navigator.userAgent;
+
+      if(sBrowser.toLowerCase().indexOf('msie') > -1){
+        return 'ie';
+      } else{
+        if(sBrowser.toLowerCase().indexOf('firefox') > -1){
+          return 'firefox';
+        }
+      }
+      return 'otro';
+    }
+
+    if(getBrowser() == 'ie' || getBrowser() == 'firefox'){
+
+      var element = document.documentElement;
+      element.setAttribute("class", "browser_fix"); //For Most Browsers
+      element.setAttribute("className","browser_fix"); //For IE; harmless to other browsers.
+    }
+  </script>
   <script src="js/libs/modernizr-2.5.2.min.js"></script>
 </head>
 <body >
@@ -82,7 +106,7 @@
           <div class="section-2">
             <a class="ir" id="asi_trabajamos" href = "Javascript:void(0);"></a>
              <a href="#" id="video_cromos" style="width:90px;height:90px;display:block;background:none;margin-left:120px;margin-top:5px;">
-              <img src="img/DefaultVideoThumbnail.jpg" width="90" height="90" style="border-radius: 15px;"></a>
+              <img src="img/DefaultVideoThumbnail.png" width="90" height="90" style="border-radius: 15px;"></a>
              </a>
           </div>
           <div class="section-3">

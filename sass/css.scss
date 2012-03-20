@@ -14,12 +14,22 @@ body{
 header{
     padding-top:60px;
 
+        .browser_fix &{
+            position:relative;
+            z-index: 1;
+
+        }
+
     h1 {
         background: url(../img/sprites.png) -85px 7px no-repeat;
         height:91px;
         width:430px;
         background-color:#003366;
         float:left;
+
+        .browser_fix & {
+           font-size:0;
+        }
     }
 
     nav{
@@ -45,7 +55,7 @@ header{
 
              &#quienes_li:hover, &#quienes_li.selected{
 
-                  background:url(../img/sprites.png) -868px -5px no-repeat;;
+                  background:url(../img/sprites.png) -868px -5px no-repeat;
                   height:105px;
 
              }
@@ -139,6 +149,10 @@ header{
         width:284px;
         margin-top: 106px;
         float:left;
+
+        .browser_fix & {
+            margin-top:52px;
+        }
     }
 
     .section-2{
@@ -148,6 +162,10 @@ header{
         margin-top: 106px;
         float:left;
         margin-left:60px;
+
+        .browser_fix & {
+            margin-top:52px;
+        }
     }
 
     .section-3{
@@ -156,7 +174,11 @@ header{
         width:424px;
         margin-top: 62px;
         float:left;
-        margin-left: 47px
+        margin-left: 47px;
+
+       .browser_fix & {
+            margin-top:10px !important;
+        }
     }
 }
 
@@ -252,10 +274,11 @@ header{
             background: url(../img/sprites.png) -123px -576px no-repeat;
         }
         p{
-            width:364px;
-            margin-left:20px;
-            text-align:justify;
-            margin-top:10px;
+            width: 317px;
+            margin-left: 50px;
+            text-align: justify;
+            margin-top: 10px;
+            font-size: 14px;
         }
     }
 
@@ -345,12 +368,27 @@ footer{
 
 .quienes_page{
 
+    .section_container_main{
+        .browser_fix &{
+            position:relative;
+            top:-55px;
+            z-index: 1px;
+        }
+    }
+
     .titulo{
         background:url(../img/sprites_sections.png) 0 0 no-repeat;
         width:1100px;
         height:176px;
         display:block;
         margin-top: -55px;
+
+        .browser_fix &{
+            position:relative;
+            top:-55px;
+            z-index: 1px;
+
+        }
 
         h2{
             background:url(../img/sprites_sections.png) -477px -559px no-repeat;
@@ -377,7 +415,7 @@ footer{
         width:513px;
         height:57px;
         display:block;
-        margin-top:100px;
+        margin-top: 60px;
         margin-left:25px;
         float:left;
 
@@ -438,7 +476,7 @@ footer{
                         top: -65px;
                         left: 80px;
                     }
-                    
+
                 }
                 &.cristian{
                     h3{
@@ -452,7 +490,7 @@ footer{
                         top: -55px;
                         left: 80px;
                     }
-                    
+
                 }
             }
 
@@ -461,7 +499,7 @@ footer{
         .employee{
             width: 92px;
             height: 98px;
-            
+
 
             &.leo{
                 background: url(../img/sprites_sections.png) -309px -1491px no-repeat;
@@ -479,12 +517,28 @@ footer{
 
 .podemos_page{
 
+    .section_container_main{
+        .browser_fix &{
+            position:relative;
+            top:-55px;
+            z-index: 1px;
+        }
+    }
     .titulo{
         background:url(../img/sprites_sections.png) 0 0 no-repeat;
         width:1100px;
         height:176px;
         display:block;
         margin-top: -55px;
+
+        .browser_fix &{
+            position:relative;
+            top:-55px;
+            z-index: 1px;
+
+        }
+
+
 
         h2{
             background:url(../img/sprites_sections.png) -477px -689px no-repeat;
@@ -604,12 +658,27 @@ footer{
 
 .contacto_page{
 
+    .section_container_main{
+        .browser_fix &{
+            position:relative;
+            top:-55px;
+            z-index: 1px;
+        }
+    }
+
     .titulo{
         background:url(../img/sprites_sections.png) 0 0 no-repeat;
         width:1100px;
         height:176px;
         display:block;
         margin-top: -55px;
+
+        .browser_fix &{
+            position:relative;
+            top:-55px;
+            z-index: 1px;
+
+        }
 
         h2{
             background:url(../img/sprites_sections.png) -1003px -677px no-repeat;

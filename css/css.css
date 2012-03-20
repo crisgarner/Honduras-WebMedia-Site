@@ -18,6 +18,11 @@ header {
   padding-top: 60px;
 }
 /* line 17, ../sass/css.scss */
+.browser_fix header {
+  position: relative;
+  z-index: 1;
+}
+/* line 23, ../sass/css.scss */
 header h1 {
   background: url(../img/sprites.png) -85px 7px no-repeat;
   height: 91px;
@@ -25,43 +30,47 @@ header h1 {
   background-color: #003366;
   float: left;
 }
-/* line 25, ../sass/css.scss */
+/* line 30, ../sass/css.scss */
+.browser_fix header h1 {
+  font-size: 0;
+}
+/* line 35, ../sass/css.scss */
 header nav {
   background-color: #003366;
   height: 91px;
   width: 640px;
   float: right;
 }
-/* line 27, ../sass/css.scss */
+/* line 37, ../sass/css.scss */
 header nav ul {
   width: 100%;
   height: 100%;
 }
-/* line 37, ../sass/css.scss */
+/* line 47, ../sass/css.scss */
 header nav li {
   float: left;
   height: 100%;
 }
-/* line 39, ../sass/css.scss */
+/* line 49, ../sass/css.scss */
 header nav li:hover {
   cursor: pointer;
 }
-/* line 46, ../sass/css.scss */
+/* line 56, ../sass/css.scss */
 header nav li#quienes_li:hover, header nav li#quienes_li.selected {
   background: url(../img/sprites.png) -868px -5px no-repeat;
   height: 105px;
 }
-/* line 53, ../sass/css.scss */
+/* line 63, ../sass/css.scss */
 header nav li#podemos_li:hover, header nav li#podemos_li.selected {
   background: url(../img/sprites.png) -1092px -5px no-repeat;
   height: 105px;
 }
-/* line 61, ../sass/css.scss */
+/* line 71, ../sass/css.scss */
 header nav li#contacto_li:hover, header nav li#contacto_li.selected {
   background: url(../img/sprites.png) -1115px -127px no-repeat;
   height: 105px;
 }
-/* line 70, ../sass/css.scss */
+/* line 80, ../sass/css.scss */
 header nav a {
   height: 36px;
   display: block;
@@ -69,53 +78,53 @@ header nav a {
   margin-top: 33px;
   float: left;
 }
-/* line 77, ../sass/css.scss */
+/* line 87, ../sass/css.scss */
 header nav a:hover {
   background-color: #CC0000;
 }
 
-/* line 86, ../sass/css.scss */
+/* line 96, ../sass/css.scss */
 #quienes {
   background: url(../img/sprites.png) -109px -95px no-repeat;
   width: 204px;
   margin-left: 13px;
 }
 
-/* line 94, ../sass/css.scss */
+/* line 104, ../sass/css.scss */
 #podemos {
   background: url(../img/sprites.png) -323px -95px no-repeat;
   width: 279px;
   margin-left: 10px;
 }
 
-/* line 100, ../sass/css.scss */
+/* line 110, ../sass/css.scss */
 #contacto {
   background: url(../img/sprites.png) -605px -95px no-repeat;
   width: 119px;
   margin-left: 13px;
 }
 
-/* line 107, ../sass/css.scss */
+/* line 117, ../sass/css.scss */
 #main {
   position: relative;
   margin: 0 auto -161px;
   height: 100%;
   min-height: 944px;
 }
-/* line 113, ../sass/css.scss */
+/* line 123, ../sass/css.scss */
 #main.quienes_page {
   margin: 0 auto -10px;
 }
-/* line 117, ../sass/css.scss */
+/* line 127, ../sass/css.scss */
 #main.podemos_page {
   margin: 0 auto -10px;
 }
-/* line 121, ../sass/css.scss */
+/* line 131, ../sass/css.scss */
 #main.contacto_page {
   margin: 0 auto -10px;
 }
 
-/* line 126, ../sass/css.scss */
+/* line 136, ../sass/css.scss */
 #promo {
   background-color: #EDEDED;
   background: url(../img/sprites.png) 0px -630px no-repeat;
@@ -126,7 +135,7 @@ header nav a:hover {
   border-top-style: solid;
   border-width: 1px;
 }
-/* line 136, ../sass/css.scss */
+/* line 146, ../sass/css.scss */
 #promo .section-1 {
   background: url(../img/sprites.png) 1px -175px no-repeat;
   height: 170px;
@@ -134,7 +143,11 @@ header nav a:hover {
   margin-top: 106px;
   float: left;
 }
-/* line 144, ../sass/css.scss */
+/* line 153, ../sass/css.scss */
+.browser_fix #promo .section-1 {
+  margin-top: 52px;
+}
+/* line 158, ../sass/css.scss */
 #promo .section-2 {
   background: url(../img/sprites.png) -339px -174px no-repeat;
   height: 170px;
@@ -143,7 +156,11 @@ header nav a:hover {
   float: left;
   margin-left: 60px;
 }
-/* line 153, ../sass/css.scss */
+/* line 166, ../sass/css.scss */
+.browser_fix #promo .section-2 {
+  margin-top: 52px;
+}
+/* line 171, ../sass/css.scss */
 #promo .section-3 {
   background: url(../img/sprites.png) -675px -131px no-repeat;
   height: 208px;
@@ -152,14 +169,18 @@ header nav a:hover {
   float: left;
   margin-left: 47px;
 }
+/* line 179, ../sass/css.scss */
+.browser_fix #promo .section-3 {
+  margin-top: 10px !important;
+}
 
-/* line 163, ../sass/css.scss */
+/* line 185, ../sass/css.scss */
 #info {
   height: 190px;
   width: 1100px;
   margin-top: 15px;
 }
-/* line 168, ../sass/css.scss */
+/* line 190, ../sass/css.scss */
 #info .section-1 {
   width: 313px;
   height: 171px;
@@ -170,7 +191,7 @@ header nav a:hover {
   float: left;
   margin-left: 50px;
 }
-/* line 180, ../sass/css.scss */
+/* line 202, ../sass/css.scss */
 #info .section-1 div {
   background: url(../img/sprites.png) -57px -394px no-repeat;
   height: 171px;
@@ -179,7 +200,7 @@ header nav a:hover {
   float: left;
   margin-left: -1px;
 }
-/* line 192, ../sass/css.scss */
+/* line 214, ../sass/css.scss */
 #info .section-2 {
   width: 313px;
   height: 171px;
@@ -190,7 +211,7 @@ header nav a:hover {
   float: left;
   margin-left: 30px;
 }
-/* line 203, ../sass/css.scss */
+/* line 225, ../sass/css.scss */
 #info .section-2 div {
   background: url(../img/sprites.png) -396px -383px no-repeat;
   height: 171px;
@@ -199,7 +220,7 @@ header nav a:hover {
   float: left;
   margin-left: -1px;
 }
-/* line 215, ../sass/css.scss */
+/* line 237, ../sass/css.scss */
 #info .section-3 {
   width: 313px;
   height: 171px;
@@ -210,7 +231,7 @@ header nav a:hover {
   float: left;
   margin-left: 30px;
 }
-/* line 226, ../sass/css.scss */
+/* line 248, ../sass/css.scss */
 #info .section-3 div {
   background: url(../img/sprites.png) -736px -397px no-repeat;
   height: 171px;
@@ -220,64 +241,65 @@ header nav a:hover {
   margin-left: -1px;
 }
 
-/* line 238, ../sass/css.scss */
+/* line 260, ../sass/css.scss */
 #otro {
   height: 277px;
   width: 1100px;
   margin-top: 15px;
 }
-/* line 244, ../sass/css.scss */
+/* line 266, ../sass/css.scss */
 #otro .section-1 {
   float: left;
 }
-/* line 248, ../sass/css.scss */
+/* line 270, ../sass/css.scss */
 #otro .section-1 a {
   margin-left: 120px;
   width: 164px;
   height: 45px;
   background: url(../img/sprites.png) -123px -576px no-repeat;
 }
-/* line 254, ../sass/css.scss */
+/* line 276, ../sass/css.scss */
 #otro .section-1 p {
-  width: 364px;
-  margin-left: 20px;
+  width: 317px;
+  margin-left: 50px;
   text-align: justify;
   margin-top: 10px;
+  font-size: 14px;
 }
-/* line 262, ../sass/css.scss */
+/* line 285, ../sass/css.scss */
 #otro .section-2 {
   float: left;
 }
-/* line 266, ../sass/css.scss */
+/* line 289, ../sass/css.scss */
 #otro .section-2 a {
   margin-left: 70px;
   width: 194px;
   height: 45px;
   background: url(../img/sprites.png) -395px -576px no-repeat;
 }
-/* line 274, ../sass/css.scss */
+/* line 297, ../sass/css.scss */
 #otro .section-3 {
   float: left;
 }
-/* line 278, ../sass/css.scss */
+/* line 301, ../sass/css.scss */
 #otro .section-3 a {
   margin-left: 130px;
   width: 225px;
   height: 45px;
   background: url(../img/sprites.png) -810px -576px no-repeat;
 }
-/* line 284, ../sass/css.scss */
+/* line 307, ../sass/css.scss */
 #otro .section-3 iframe {
   margin-left: 240px;
   width: 200px !important;
 }
 
-/* line 292, ../sass/css.scss */
+/* line 315, ../sass/css.scss */
 .push {
   height: 161px;
 }
 
-/* line 296, ../sass/css.scss */
+/* line 319, ../sass/css.scss */
 footer {
   color: white;
   background-color: #333333;
@@ -285,7 +307,7 @@ footer {
   padding-top: 51px;
   position: relative;
 }
-/* line 302, ../sass/css.scss */
+/* line 325, ../sass/css.scss */
 footer a#hwm {
   display: block;
   height: 62px;
@@ -294,14 +316,14 @@ footer a#hwm {
   margin-left: 20px;
   float: left;
 }
-/* line 312, ../sass/css.scss */
+/* line 335, ../sass/css.scss */
 footer div {
   margin-top: 5px;
   float: left;
   clear: right;
   margin-left: 50px;
 }
-/* line 319, ../sass/css.scss */
+/* line 342, ../sass/css.scss */
 footer div #twitter {
   margin-top: 5px;
   width: 20px;
@@ -311,7 +333,7 @@ footer div #twitter {
   background: url(../img/sprites.png) -756px -37px no-repeat;
   margin-left: 5px;
 }
-/* line 329, ../sass/css.scss */
+/* line 352, ../sass/css.scss */
 footer div #fb {
   margin-top: 5px;
   width: 20px;
@@ -323,7 +345,13 @@ footer div #fb {
 }
 
 /******************************************CSS SECTIONS**********************************************/
-/* line 348, ../sass/css.scss */
+/* line 372, ../sass/css.scss */
+.browser_fix .quienes_page .section_container_main {
+  position: relative;
+  top: -55px;
+  z-index: 1px;
+}
+/* line 379, ../sass/css.scss */
 .quienes_page .titulo {
   background: url(../img/sprites_sections.png) 0 0 no-repeat;
   width: 1100px;
@@ -331,7 +359,13 @@ footer div #fb {
   display: block;
   margin-top: -55px;
 }
-/* line 355, ../sass/css.scss */
+/* line 386, ../sass/css.scss */
+.browser_fix .quienes_page .titulo {
+  position: relative;
+  top: -55px;
+  z-index: 1px;
+}
+/* line 393, ../sass/css.scss */
 .quienes_page .titulo h2 {
   background: url(../img/sprites_sections.png) -477px -559px no-repeat;
   width: 246px;
@@ -340,7 +374,7 @@ footer div #fb {
   margin-top: 95px;
   margin-left: 15px;
 }
-/* line 365, ../sass/css.scss */
+/* line 403, ../sass/css.scss */
 .quienes_page .suit_imagen {
   background: url(../img/sprites_sections.png) -47px -183px no-repeat;
   width: 232px;
@@ -350,21 +384,21 @@ footer div #fb {
   margin-left: 15px;
   float: left;
 }
-/* line 375, ../sass/css.scss */
+/* line 413, ../sass/css.scss */
 .quienes_page p {
   /*background:url(../img/sprites_sections.png) -477px -614px no-repeat;*/
   width: 513px;
   height: 57px;
   display: block;
-  margin-top: 100px;
+  margin-top: 60px;
   margin-left: 25px;
   float: left;
 }
-/* line 384, ../sass/css.scss */
+/* line 422, ../sass/css.scss */
 .quienes_page p.second {
   margin-top: 50px;
 }
-/* line 389, ../sass/css.scss */
+/* line 427, ../sass/css.scss */
 .quienes_page .video {
   background: url(../img/sprites_sections.png) -21px -564px no-repeat;
   width: 402px;
@@ -375,15 +409,15 @@ footer div #fb {
   float: left;
   clear: left;
 }
-/* line 399, ../sass/css.scss */
+/* line 437, ../sass/css.scss */
 .quienes_page .video:hover {
   cursor: pointer;
 }
-/* line 403, ../sass/css.scss */
+/* line 441, ../sass/css.scss */
 .quienes_page .video video {
   background: black;
 }
-/* line 409, ../sass/css.scss */
+/* line 447, ../sass/css.scss */
 .quienes_page .estos_somos {
   background: url(../img/sprites_sections.png) -438px -260px no-repeat;
   width: 595px;
@@ -394,65 +428,71 @@ footer div #fb {
   float: left;
   padding-left: 20px;
 }
-/* line 419, ../sass/css.scss */
+/* line 457, ../sass/css.scss */
 .quienes_page .estos_somos .employee_container {
   margin-top: 80px;
   width: 92px;
   height: 98px;
   float: left;
 }
-/* line 426, ../sass/css.scss */
+/* line 463, ../sass/css.scss */
 .quienes_page .estos_somos .employee_container .descripcion {
   display: none;
   width: 300px;
 }
-/* line 429, ../sass/css.scss */
+/* line 466, ../sass/css.scss */
 .quienes_page .estos_somos .employee_container .descripcion.leo {
   width: 250px;
 }
-/* line 431, ../sass/css.scss */
+/* line 468, ../sass/css.scss */
 .quienes_page .estos_somos .employee_container .descripcion.leo h3 {
   position: relative;
   top: -72px;
   left: 105px;
   font-size: 22px;
 }
-/* line 437, ../sass/css.scss */
+/* line 474, ../sass/css.scss */
 .quienes_page .estos_somos .employee_container .descripcion.leo ul {
   position: relative;
   top: -65px;
   left: 80px;
 }
-/* line 445, ../sass/css.scss */
+/* line 482, ../sass/css.scss */
 .quienes_page .estos_somos .employee_container .descripcion.cristian h3 {
   position: relative;
   top: -72px;
   left: 105px;
   font-size: 22px;
 }
-/* line 451, ../sass/css.scss */
+/* line 488, ../sass/css.scss */
 .quienes_page .estos_somos .employee_container .descripcion.cristian ul {
   position: relative;
   top: -55px;
   left: 80px;
 }
-/* line 462, ../sass/css.scss */
+/* line 499, ../sass/css.scss */
 .quienes_page .estos_somos .employee {
   width: 92px;
   height: 98px;
 }
-/* line 467, ../sass/css.scss */
+/* line 504, ../sass/css.scss */
 .quienes_page .estos_somos .employee.leo {
   background: url(../img/sprites_sections.png) -309px -1491px no-repeat;
   cursor: pointer;
 }
-/* line 472, ../sass/css.scss */
+/* line 509, ../sass/css.scss */
 .quienes_page .estos_somos .employee.cristian {
   background: url(../img/sprites_sections.png) -309px -1617px no-repeat;
   cursor: pointer;
 }
 
-/* line 483, ../sass/css.scss */
+/* line 521, ../sass/css.scss */
+.browser_fix .podemos_page .section_container_main {
+  position: relative;
+  top: -55px;
+  z-index: 1px;
+}
+/* line 527, ../sass/css.scss */
 .podemos_page .titulo {
   background: url(../img/sprites_sections.png) 0 0 no-repeat;
   width: 1100px;
@@ -460,7 +500,13 @@ footer div #fb {
   display: block;
   margin-top: -55px;
 }
-/* line 490, ../sass/css.scss */
+/* line 534, ../sass/css.scss */
+.browser_fix .podemos_page .titulo {
+  position: relative;
+  top: -55px;
+  z-index: 1px;
+}
+/* line 543, ../sass/css.scss */
 .podemos_page .titulo h2 {
   background: url(../img/sprites_sections.png) -477px -689px no-repeat;
   width: 358px;
@@ -469,7 +515,7 @@ footer div #fb {
   margin-top: 95px;
   margin-left: 15px;
 }
-/* line 500, ../sass/css.scss */
+/* line 553, ../sass/css.scss */
 .podemos_page .suit_imagen {
   background: url(../img/sprites_sections.png) -904px -873px no-repeat;
   width: 145px;
@@ -479,12 +525,12 @@ footer div #fb {
   margin-left: 75px;
   float: left;
 }
-/* line 510, ../sass/css.scss */
+/* line 563, ../sass/css.scss */
 .podemos_page .section_container {
   float: left;
   margin-left: 15px;
 }
-/* line 514, ../sass/css.scss */
+/* line 567, ../sass/css.scss */
 .podemos_page .section_container .section-1 {
   background-color: #EDEDED;
   border-width: 1px;
@@ -496,7 +542,7 @@ footer div #fb {
   margin-left: 15px;
   margin-top: 25px;
 }
-/* line 525, ../sass/css.scss */
+/* line 578, ../sass/css.scss */
 .podemos_page .section_container .section-1 h3 {
   width: 220px;
   height: 33px;
@@ -504,7 +550,7 @@ footer div #fb {
   margin-top: 15px;
   margin-left: 15px;
 }
-/* line 533, ../sass/css.scss */
+/* line 586, ../sass/css.scss */
 .podemos_page .section_container .section-1 p {
   width: 771px;
   height: 39px;
@@ -512,7 +558,7 @@ footer div #fb {
   margin-top: 10px;
   margin-left: 15px;
 }
-/* line 542, ../sass/css.scss */
+/* line 595, ../sass/css.scss */
 .podemos_page .section_container .section-2 {
   background: url(../img/sprites_sections.png) -22px -861px no-repeat;
   width: 802px;
@@ -521,7 +567,7 @@ footer div #fb {
   margin-left: 15px;
   margin-top: 25px;
 }
-/* line 550, ../sass/css.scss */
+/* line 603, ../sass/css.scss */
 .podemos_page .section_container .section-2 p {
   margin-left: 170px;
   margin-top: 5px;
@@ -530,7 +576,7 @@ footer div #fb {
   width: 388px;
   background: url(../img/sprites_sections.png) -35px -1359px no-repeat;
 }
-/* line 559, ../sass/css.scss */
+/* line 612, ../sass/css.scss */
 .podemos_page .section_container .section-2 h3 {
   width: 139px;
   height: 33px;
@@ -538,7 +584,7 @@ footer div #fb {
   margin-top: 15px;
   margin-left: 15px;
 }
-/* line 568, ../sass/css.scss */
+/* line 621, ../sass/css.scss */
 .podemos_page .section_container .section-2 ul {
   margin-left: 10px;
   margin-top: 28px;
@@ -547,7 +593,7 @@ footer div #fb {
   width: 739px;
   background: url(../img/sprites_sections.png) -475px -1394px no-repeat;
 }
-/* line 578, ../sass/css.scss */
+/* line 631, ../sass/css.scss */
 .podemos_page .section_container .section-3 {
   background-color: #CC0000;
   border-width: 1px;
@@ -559,7 +605,7 @@ footer div #fb {
   margin-left: 15px;
   margin-top: 25px;
 }
-/* line 589, ../sass/css.scss */
+/* line 642, ../sass/css.scss */
 .podemos_page .section_container .section-3 h3 {
   margin-left: auto;
   margin-right: auto;
@@ -570,12 +616,18 @@ footer div #fb {
   background: url(../img/sprites_sections.png) -528px -193px no-repeat;
 }
 
-/* line 602, ../sass/css.scss */
+/* line 655, ../sass/css.scss */
 #quiero_click {
   cursor: pointer;
 }
 
-/* line 608, ../sass/css.scss */
+/* line 662, ../sass/css.scss */
+.browser_fix .contacto_page .section_container_main {
+  position: relative;
+  top: -55px;
+  z-index: 1px;
+}
+/* line 669, ../sass/css.scss */
 .contacto_page .titulo {
   background: url(../img/sprites_sections.png) 0 0 no-repeat;
   width: 1100px;
@@ -583,7 +635,13 @@ footer div #fb {
   display: block;
   margin-top: -55px;
 }
-/* line 615, ../sass/css.scss */
+/* line 676, ../sass/css.scss */
+.browser_fix .contacto_page .titulo {
+  position: relative;
+  top: -55px;
+  z-index: 1px;
+}
+/* line 683, ../sass/css.scss */
 .contacto_page .titulo h2 {
   background: url(../img/sprites_sections.png) -1003px -677px no-repeat;
   width: 246px;
@@ -592,7 +650,7 @@ footer div #fb {
   margin-top: 95px;
   margin-left: 15px;
 }
-/* line 625, ../sass/css.scss */
+/* line 693, ../sass/css.scss */
 .contacto_page .suit_imagen {
   background: url(../img/sprites_sections.png) -1052px -861px no-repeat;
   width: 232px;
@@ -602,12 +660,12 @@ footer div #fb {
   margin-left: 15px;
   float: left;
 }
-/* line 635, ../sass/css.scss */
+/* line 703, ../sass/css.scss */
 .contacto_page #llamenos {
   margin-top: 60px;
   float: left;
 }
-/* line 639, ../sass/css.scss */
+/* line 707, ../sass/css.scss */
 .contacto_page #llamenos h3 {
   width: 104px;
   height: 33px;
@@ -615,7 +673,7 @@ footer div #fb {
   margin-left: 1px;
   margin-right: 1px;
 }
-/* line 647, ../sass/css.scss */
+/* line 715, ../sass/css.scss */
 .contacto_page #llamenos p {
   width: 196px;
   height: 43px;
@@ -624,7 +682,7 @@ footer div #fb {
   border-style: solid;
   border-width: 1px;
 }
-/* line 655, ../sass/css.scss */
+/* line 723, ../sass/css.scss */
 .contacto_page #llamenos p span {
   margin-top: 3px;
   display: block;
@@ -632,19 +690,19 @@ footer div #fb {
   height: 43px;
   background: url(../img/sprites_sections.png) -47px -1170px no-repeat;
 }
-/* line 663, ../sass/css.scss */
+/* line 731, ../sass/css.scss */
 .contacto_page #llamenos p a {
   display: block;
   width: 196px;
   height: 43px;
 }
-/* line 673, ../sass/css.scss */
+/* line 741, ../sass/css.scss */
 .contacto_page #skype {
   float: left;
   margin-top: 60px;
   margin-left: 40px;
 }
-/* line 678, ../sass/css.scss */
+/* line 746, ../sass/css.scss */
 .contacto_page #skype h3 {
   width: 104px;
   height: 33px;
@@ -652,7 +710,7 @@ footer div #fb {
   margin-left: 1px;
   margin-right: 1px;
 }
-/* line 686, ../sass/css.scss */
+/* line 754, ../sass/css.scss */
 .contacto_page #skype p {
   width: 196px;
   height: 43px;
@@ -661,7 +719,7 @@ footer div #fb {
   border-style: solid;
   border-width: 1px;
 }
-/* line 694, ../sass/css.scss */
+/* line 762, ../sass/css.scss */
 .contacto_page #skype p span {
   margin-top: 3px;
   display: block;
@@ -670,13 +728,13 @@ footer div #fb {
   background: url(../img/sprites_sections.png) -315px -1170px no-repeat;
   margin-left: 15px;
 }
-/* line 707, ../sass/css.scss */
+/* line 775, ../sass/css.scss */
 .contacto_page #redes_sociales {
   float: left;
   margin-top: 60px;
   margin-left: 40px;
 }
-/* line 712, ../sass/css.scss */
+/* line 780, ../sass/css.scss */
 .contacto_page #redes_sociales h3 {
   width: 165px;
   height: 33px;
@@ -684,33 +742,33 @@ footer div #fb {
   margin-left: 1px;
   margin-right: 1px;
 }
-/* line 720, ../sass/css.scss */
+/* line 788, ../sass/css.scss */
 .contacto_page #redes_sociales a {
   display: block;
   width: 156px;
   height: 37px;
 }
-/* line 726, ../sass/css.scss */
+/* line 794, ../sass/css.scss */
 .contacto_page #redes_sociales .facebook {
   float: left;
   width: 156px;
   height: 37px;
   background: url(../img/sprites_sections.png) -696px -1170px no-repeat;
 }
-/* line 733, ../sass/css.scss */
+/* line 801, ../sass/css.scss */
 .contacto_page #redes_sociales .twitter {
   float: left;
   width: 156px;
   height: 37px;
   background: url(../img/sprites_sections.png) -540px -1170px no-repeat;
 }
-/* line 742, ../sass/css.scss */
+/* line 810, ../sass/css.scss */
 .contacto_page #email {
   width: 700px;
   height: 85px;
   margin-top: 165px;
 }
-/* line 747, ../sass/css.scss */
+/* line 815, ../sass/css.scss */
 .contacto_page #email h3 {
   width: 104px;
   height: 33px;
@@ -718,7 +776,7 @@ footer div #fb {
   margin-left: 1px;
   margin-right: 1px;
 }
-/* line 755, ../sass/css.scss */
+/* line 823, ../sass/css.scss */
 .contacto_page #email p {
   width: 396px;
   height: 43px;
@@ -727,7 +785,7 @@ footer div #fb {
   border-style: solid;
   border-width: 1px;
 }
-/* line 763, ../sass/css.scss */
+/* line 831, ../sass/css.scss */
 .contacto_page #email p span {
   margin-top: 3px;
   display: block;
@@ -736,62 +794,62 @@ footer div #fb {
   background: url(../img/sprites_sections.png) -52px -1263px no-repeat;
   margin-left: 5px;
 }
-/* line 774, ../sass/css.scss */
+/* line 842, ../sass/css.scss */
 .contacto_page #email a {
   display: block;
   width: 396px;
   height: 43px;
 }
-/* line 782, ../sass/css.scss */
+/* line 850, ../sass/css.scss */
 .contacto_page .gracias {
   margin-top: 34px;
   font-size: 23px;
   width: 785px;
   color: #333333;
 }
-/* line 789, ../sass/css.scss */
+/* line 857, ../sass/css.scss */
 .contacto_page #formulario {
   width: 600px;
   float: left;
 }
-/* line 793, ../sass/css.scss */
+/* line 861, ../sass/css.scss */
 .contacto_page #formulario label {
   float: left;
   margin-top: 10px;
 }
-/* line 797, ../sass/css.scss */
+/* line 865, ../sass/css.scss */
 .contacto_page #formulario label.nombre {
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -491px -1250px no-repeat;
 }
-/* line 803, ../sass/css.scss */
+/* line 871, ../sass/css.scss */
 .contacto_page #formulario label.email {
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -840px -1251px no-repeat;
 }
-/* line 809, ../sass/css.scss */
+/* line 877, ../sass/css.scss */
 .contacto_page #formulario label.empresa {
   clear: left;
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -495px -1299px no-repeat;
 }
-/* line 816, ../sass/css.scss */
+/* line 884, ../sass/css.scss */
 .contacto_page #formulario label.telefono {
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -839px -1299px no-repeat;
 }
-/* line 822, ../sass/css.scss */
+/* line 890, ../sass/css.scss */
 .contacto_page #formulario label.mensaje {
   clear: left;
   height: 21px;
   width: 70px;
   background: url(../img/sprites_sections.png) -494px -1349px no-repeat;
 }
-/* line 832, ../sass/css.scss */
+/* line 900, ../sass/css.scss */
 .contacto_page #formulario form {
   padding-left: 40px;
   padding-top: 30px;
@@ -802,7 +860,7 @@ footer div #fb {
   border-style: solid;
   border-width: 1px;
 }
-/* line 842, ../sass/css.scss */
+/* line 910, ../sass/css.scss */
 .contacto_page #formulario form input[type="text"] {
   width: 277px;
   height: 32px;
@@ -812,7 +870,7 @@ footer div #fb {
   float: left;
   margin-bottom: 10px;
 }
-/* line 852, ../sass/css.scss */
+/* line 920, ../sass/css.scss */
 .contacto_page #formulario form textarea {
   width: 623px;
   height: 134px;
@@ -822,7 +880,7 @@ footer div #fb {
   float: left;
   resize: none;
 }
-/* line 862, ../sass/css.scss */
+/* line 930, ../sass/css.scss */
 .contacto_page #formulario form input[type="submit"] {
   width: 92px;
   height: 33px;
@@ -833,7 +891,7 @@ footer div #fb {
   left: -10px;
   background: url(../img/sprites_sections.png) -665px -1305px no-repeat;
 }
-/* line 876, ../sass/css.scss */
+/* line 944, ../sass/css.scss */
 .contacto_page #formulario h3 {
   margin-top: 20px;
   display: block;

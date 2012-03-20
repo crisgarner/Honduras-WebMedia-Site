@@ -31,6 +31,31 @@
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
+
+  <script type="text/javascript">
+
+  //BROWSER FIXES
+    function getBrowser() {
+
+      var sBrowser = navigator.userAgent;
+
+      if(sBrowser.toLowerCase().indexOf('msie') > -1){
+        return 'ie';
+      } else{
+        if(sBrowser.toLowerCase().indexOf('firefox') > -1){
+          return 'firefox';
+        }
+      }
+      return 'otro';
+    }
+
+    if(getBrowser() == 'ie' || getBrowser() == 'firefox'){
+
+      var element = document.documentElement;
+      element.setAttribute("class", "browser_fix"); //For Most Browsers
+      element.setAttribute("className","browser_fix"); //For IE; harmless to other browsers.
+    }
+  </script>
   <script src="js/libs/modernizr-2.5.2.min.js"></script>
 </head>
 <body>
@@ -52,17 +77,17 @@
         <section class="ir titulo clearfix">
           <h2 class="ir">Quienes Somos</h2>
         </section>
-        <section>
+        <section class="section_container_main">
           <div class="suit_imagen" class="ir">
           </div>
           <p class="">Somos un equipo que entiende la importancia de la web en la vida de las empresas, por lo que pretendemos ofrecer un servicio que dote a su empresa de un sitio web inteligente, equipado con herramientas de comunicación y producción a un bajo precio.</p>
           <p class="second">Trabajamos desde 2011 en plantear soluciones que permitan cambiar el giro de los negocios para cada cliente, integrándoles a nuestra familia en HWM, generando positivamente cambios en su estructura tecnológica.</p>
           <div class="video ">
-              <video controls width="402" height="241">  
-                  <source src="video/como_trabajamos.mp4" type="video/mp4" />  
-                  <!-- If the browser doesn't understand the <video> element, then reference a Flash file. You could also write something like "Use a Better Browser!" if you're feeling nasty. (Better to use a Flash file though.) -->  
-                  
-              </video>  
+              <video controls width="402" height="241">
+                  <source src="video/como_trabajamos.mp4" type="video/mp4" />
+                  <!-- If the browser doesn't understand the <video> element, then reference a Flash file. You could also write something like "Use a Better Browser!" if you're feeling nasty. (Better to use a Flash file though.) -->
+
+              </video>
           </div>
           <div class="estos_somos ">
             <h3 class="ir ">Estos Somos</h3>

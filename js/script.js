@@ -5,6 +5,7 @@
 // Create a jQuery exists method
 jQuery.fn.exists = function () { return jQuery(this).length > 0; }
 
+
 ///Redirecciones al presionar el li
 $("#quienes_li").click(function(){
     window.location.href = "quienes.html";
@@ -126,6 +127,6 @@ $(".employee_container").click(function(){
         }).queue(function(){
             x.fadeIn(600);
             $(this).dequeue();
-        });     
+        });
     }
 });

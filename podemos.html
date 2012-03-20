@@ -31,6 +31,30 @@
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script type="text/javascript">
+
+  //BROWSER FIXES
+    function getBrowser() {
+
+      var sBrowser = navigator.userAgent;
+
+      if(sBrowser.toLowerCase().indexOf('msie') > -1){
+        return 'ie';
+      } else{
+        if(sBrowser.toLowerCase().indexOf('firefox') > -1){
+          return 'firefox';
+        }
+      }
+      return 'otro';
+    }
+
+    if(getBrowser() == 'ie' || getBrowser() == 'firefox'){
+
+      var element = document.documentElement;
+      element.setAttribute("class", "browser_fix"); //For Most Browsers
+      element.setAttribute("className","browser_fix"); //For IE; harmless to other browsers.
+    }
+  </script>
   <script src="js/libs/modernizr-2.5.2.min.js"></script>
 </head>
 <body>
@@ -52,7 +76,7 @@
         <section class="ir titulo clearfix">
           <h2 class="ir">Lo que podemos hacer</h2>
         </section>
-        <section>
+        <section class="section_container_main">
           <div class="suit_imagen" class="ir">
           </div>
 
@@ -60,8 +84,8 @@
               <div class="section-1">
                   <h3 class="ir">Aplicaciones Móviles</h3>
                   <p class="ir">Desarrollamos soluciones integrales para su empresa, creando herramientas funcionales para la distribución de contenidos a dispositivos móviles a través de aplicaciones dedicadas para estos dispositivos.</p>
-                  <a href="#" id="video_cromos" style="width:90px;height:90px;background:;display:block;margin-left:30px;margin-top:5px;"><img src="img/DefaultVideoThumbnail.jpg" width="90" height="90" style="border-radius: 15px;"></a>
-                  
+                  <a href="#" id="video_cromos" style="width:90px;height:90px;background:;display:block;margin-left:30px;margin-top:5px;"><img src="img/DefaultVideoThumbnail.png" width="90" height="90" style="border-radius: 15px;"></a>
+
               </div>
               <div class="section-2 clearfix">
                 <h3 class="ir">WebSolución</h3>
