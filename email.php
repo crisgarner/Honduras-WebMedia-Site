@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['email'])) {
+if(isset($_POST['email_form'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "info@honduraswebmedia.com";
