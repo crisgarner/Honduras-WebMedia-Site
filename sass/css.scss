@@ -133,7 +133,28 @@ header{
     }
 }
 
-#promo{
+
+
+#gray_background{
+    background:url(../img/sprites_sections.png) 0 0 no-repeat;
+        width:1100px;
+        height:176px;
+        display:block;
+        margin-top: -55px;
+
+        .browser_fix &{
+            position:relative;
+            top:-55px;
+            z-index: 1px;
+
+        }
+}
+
+#banner{
+    height:354px;
+}
+
+/*#promo{
     background-color:#EDEDED;
     background: url(../img/sprites.png) -0px -630px no-repeat;
     height:277px;
@@ -181,8 +202,10 @@ header{
         }
     }
 }
+*/
 
-#info{
+
+/*#info{
     height:190px;
     width:1100px;
     margin-top: 15px;
@@ -256,7 +279,7 @@ header{
         }
     }
 }
-
+*/
 #otro{
 
     height:277px;
