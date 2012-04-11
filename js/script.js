@@ -130,3 +130,64 @@ $(".employee_container").click(function(){
         });
     }
 });
+
+
+//Podemos Sub Menu
+
+$("#podemos_info_container .section-1 a").live("click",function(){
+    var clase = $(this).attr("class");
+    $("#podemos_info_container .section-1 a").removeClass("selected");
+    $(this).addClass("selected");
+
+    switch(clase){
+        case "websolucion":
+            var p = "Es un paquete pensado para instituciones que requieren de herramientas electrónicas para la comunicación y promoción de sus productos o servicios en una forma económica, práctica y altamente funcional.";
+            $("#content").addClass("bounceOutDown");
+            bounceAnimation("WebSolución",p);
+            console.log(clase);
+        break;
+        case "cultura":
+            var p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum augue nec magna varius vehicula. Mauris ac dui vitae quam congue tincidunt lobortis vel purus. Etiam at purus dolor. Curabitur vitae ipsum sit amet metus aliquet laoreet quis in est. Vestibulum tempus turpis tristique tellus porta vestibulum vel nec neque. Nam fringilla consequat nibh a feugiat. Nullam at tellus id justo pulvinar vehicula. In hac habitasse platea dictumst.";
+            $("#content").addClass("bounceOutDown");
+            bounceAnimation("Cultura Organizacional",p);
+            console.log(clase);
+        break;
+        case "goToInbox":
+            var p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum augue nec magna varius vehicula. Mauris ac dui vitae quam congue tincidunt lobortis vel purus. Etiam at purus dolor. Curabitur vitae ipsum sit amet metus aliquet laoreet quis in est. Vestibulum tempus turpis tristique tellus porta vestibulum vel nec neque. Nam fringilla consequat nibh a feugiat. Nullam at tellus id justo pulvinar vehicula. In hac habitasse platea dictumst.";
+            $("#content").addClass("bounceOutDown");
+            bounceAnimation("Go2Inbox",p);
+            console.log(clase);
+        break;
+        case "socialMedia":
+            var p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum augue nec magna varius vehicula. Mauris ac dui vitae quam congue tincidunt lobortis vel purus. Etiam at purus dolor. Curabitur vitae ipsum sit amet metus aliquet laoreet quis in est. Vestibulum tempus turpis tristique tellus porta vestibulum vel nec neque. Nam fringilla consequat nibh a feugiat. Nullam at tellus id justo pulvinar vehicula. In hac habitasse platea dictumst.";
+            $("#content").addClass("bounceOutDown");
+            bounceAnimation("SocialMedia",p);
+            console.log(clase);
+        break;
+        case "socialBots":
+            var p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum augue nec magna varius vehicula. Mauris ac dui vitae quam congue tincidunt lobortis vel purus. Etiam at purus dolor. Curabitur vitae ipsum sit amet metus aliquet laoreet quis in est. Vestibulum tempus turpis tristique tellus porta vestibulum vel nec neque. Nam fringilla consequat nibh a feugiat. Nullam at tellus id justo pulvinar vehicula. In hac habitasse platea dictumst.";
+            $("#content").addClass("bounceOutDown");
+            bounceAnimation("SocialBots",p);
+            console.log(clase);
+        break;
+        case "moviles":
+            var p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum augue nec magna varius vehicula. Mauris ac dui vitae quam congue tincidunt lobortis vel purus. Etiam at purus dolor. Curabitur vitae ipsum sit amet metus aliquet laoreet quis in est. Vestibulum tempus turpis tristique tellus porta vestibulum vel nec neque. Nam fringilla consequat nibh a feugiat. Nullam at tellus id justo pulvinar vehicula. In hac habitasse platea dictumst.";
+            $("#content").addClass("bounceOutDown");
+            bounceAnimation("Apliaciones Moviles",p);
+            console.log(clase);
+        break;
+    }
+});
+
+function bounceAnimation(titulo,info){
+
+    setTimeout(
+          function()
+          {
+            $("#content h3").html(titulo);
+            $("#content p").html(info);
+            $("#content").removeClass("bounceOutDown");
+            $("#content").addClass("bounceInDown");
+          }, 500);
+
+}

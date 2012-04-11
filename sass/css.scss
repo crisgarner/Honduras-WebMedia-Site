@@ -640,9 +640,17 @@ footer{
             top:-55px;
             z-index: 1px;
         }
+          h2{
+            background:url(../img/sprites_sections.png) -10px -388px no-repeat;
+            width:429px;
+            height:55px;
+            display:block;
+            margin-top: -20px;
+            margin-left: 15px;
+        }
     }
     .titulo{
-        background:url(../img/sprites_sections.png) 0 0 no-repeat;
+        background:url(../img/sprites_sections.png) 0 -201px no-repeat;
         width:1100px;
         height:176px;
         display:block;
@@ -654,18 +662,76 @@ footer{
             z-index: 1px;
 
         }
-
-
-
-        h2{
-            background:url(../img/sprites_sections.png) -477px -689px no-repeat;
-            width:358px;
-            height:52px;
-            display:block;
-            margin-top: 95px;
-            margin-left: 15px;
-        }
     }
+
+    #podemos_info_container{
+        font-family:helvetica neue,Myriad Pro;
+        padding-left:20px;
+        padding-top:10px;
+
+        .nav-section{
+            width:230px;
+            float:left;
+            border-color:#CCCCCC;
+            border-right-style:solid  ;
+            border-width:1px;
+            padding-right:30px;
+        }
+
+        nav.section-1{
+            height:280px;
+            border-color:#CCCCCC;
+            border-bottom-style:solid  ;
+            border-width:1px;
+        }
+
+        nav.section-2{
+            padding-top:40px;
+        }
+
+        a:visited,a:hover,a{
+            color:#333333;
+            text-decoration:none;
+            font-size:22px;
+
+            margin-bottom:3px;
+            display:block;
+        }
+
+        a:hover{
+            color:#CCCCCC;
+        }
+        a.selected{
+            color:black;
+            font-weight:bold;
+        }
+
+        #content{
+            float:left;
+            padding-top:5px;
+            padding-left:40px;
+
+            h3{
+
+                font-size:38px;
+            }
+
+            p{
+                width:436px;
+                float:left;
+                font-size:16px;
+                margin-top:10px;
+            }
+
+            img{
+                position:relative;
+                top:-60px;
+                margin-left:20px;
+            }
+        }
+
+    }
+
 
     .suit_imagen{
         background:url(../img/sprites_sections.png) -904px -873px no-repeat;
@@ -680,6 +746,8 @@ footer{
     .section_container{
         float:left;
         margin-left:15px;
+
+
 
         .section-1{
             background-color:#EDEDED;
@@ -780,11 +848,22 @@ footer{
             position:relative;
             top:-55px;
             z-index: 1px;
+
+
+        }
+
+        h2{
+            background:url(../img/sprites_sections.png) -10px -453px no-repeat;
+            width:171px;
+            height:55px;
+            display:block;
+            margin-top: -20px;
+            margin-left: 15px;
         }
     }
 
     .titulo{
-        background:url(../img/sprites_sections.png) 0 0 no-repeat;
+        background:url(../img/sprites_sections.png) 0 -201px no-repeat;
         width:1100px;
         height:176px;
         display:block;
@@ -818,7 +897,7 @@ footer{
     }
 
     #llamenos{
-        margin-top:60px;
+        margin-top:30px;
         float:left;
 
         h3{
@@ -857,7 +936,7 @@ footer{
 
     #skype{
         float:left;
-        margin-top:60px;
+        margin-top:30px;
         margin-left:40px;
 
          h3{
@@ -891,7 +970,7 @@ footer{
 
     #redes_sociales{
         float:left;
-        margin-top:60px;
+        margin-top:30px;
         margin-left:40px;
 
          h3{
@@ -927,7 +1006,7 @@ footer{
     #email{
         width:700px;
         height:85px;
-        margin-top:165px;
+        margin-top:135px;
 
          h3{
             width:104px;
