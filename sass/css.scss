@@ -116,7 +116,7 @@ header{
 
 #main{
     position: relative;
-    margin: 0 auto -161px;
+    margin: 0 auto -50px;
     height: 100%;
     min-height: 944px;
 
@@ -142,6 +142,15 @@ header{
         display:block;
         margin-top: -55px;
 
+        p{
+            background: url(../img/sprites.png) 0px -578px no-repeat;
+            height: 56px;
+            margin-top: 83px;
+            width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .browser_fix &{
             position:relative;
             top:-55px;
@@ -151,7 +160,92 @@ header{
 }
 
 #banner{
-    height:354px;
+    height: 235px;
+    background: url(../img/banner.png) center center no-repeat;
+
+
+}
+
+#extra-bar{
+    background-color:#100906;
+    height:43px;
+    color:white;
+    padding-top:30px;
+    padding-bottom:20px;
+    font-size:24px;
+
+    a:visited,a:hover,a{
+        color:white;
+        text-decoration:none;
+        margin-left:10px;
+    }
+
+
+    .section-1{
+        float:left;
+        a{
+            margin-left: 30px;
+        }
+    }
+
+    .section-2{
+        float:left;
+        a{
+            margin-left:80px;
+        }
+    }
+
+    .section-3{
+        float:left;
+        a{
+            margin-left:110px;
+        }
+    }
+}
+
+#promo{
+    margin-top:50px;
+    margin-bottom:70px;
+    height:195px;
+    background:url(../img/sprites.png)-1px -289px no-repeat;
+
+    .section-1{
+        width:313px;
+        height:171px;
+        margin-left:30px;
+        background-color:#EDEDED;
+        border-color:#CCCCCC;
+        border-style:solid  ;
+        border-width:1px;
+        float:left;
+    }
+
+    .section-2{
+        background: url(../img/sprites.png) -555px -506px no-repeat;
+        width: 347px;
+        height: 204px;
+        margin-left: 50px;
+       // background-color: #EDEDED;
+        //border-color: #CCC;
+        //border-top-style: solid;
+        //border-width: 1px;
+        float: left;
+        margin-top: -18px;
+    }
+
+    .section-3{
+
+        background: url(../img/sprites.png) -994px -522px no-repeat;
+        width: 313px;
+        height: 171px;
+        margin-left: 30px;
+        background-color: #EDEDED;
+        border-color: #CCC;
+        border-style: solid;
+        border-width: 1px;
+        float: left;
+    }
+
 }
 
 /*#promo{
