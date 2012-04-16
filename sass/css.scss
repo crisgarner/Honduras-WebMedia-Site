@@ -8,6 +8,7 @@ body{
     margin: auto;
     height: 100%;
     min-height: 944px;
+    font-family:helvetica neue,Myriad Pro;
 }
 
 
@@ -126,6 +127,10 @@ header{
 
     &.podemos_page{
         margin: 0 auto -10px;
+    }
+
+    &.podemos_page.portafolio{
+        margin: 0 auto -115px;
     }
 
     &.contacto_page{
@@ -491,10 +496,56 @@ footer{
             top:-55px;
             z-index: 1px;
         }
+
+
+        h2{
+            background:url(../img/sprites_sections.png) -10px -515px no-repeat;
+            width:286px;
+            height:55px;
+            display:block;
+            margin-top: -20px;
+            margin-left: 15px;
+        }
+
+
+        .section-1{
+            float:left;
+            width:510px;
+
+            img{
+                margin-left:20px;
+                margin-bottom:0px;
+            }
+
+            p{
+                width:485px;
+                display:block;
+                margin-left:20px;
+                margin-top:20px;
+                margin-bottom:30px;
+            }
+
+        }
+        .section-2{
+            float:left;
+            width:510px;
+            border-width:1px;
+            border-color:#CCCCCC;
+            border-left-style:solid;
+            margin-left:10px;
+
+
+            h3{
+                font-size:38px;
+                margin-left:20px;
+            }
+        }
+
+
     }
 
     .titulo{
-        background:url(../img/sprites_sections.png) 0 0 no-repeat;
+        background:url(../img/sprites_sections.png) 0 -201px no-repeat;
         width:1100px;
         height:176px;
         display:block;
@@ -507,25 +558,10 @@ footer{
 
         }
 
-        h2{
-            background:url(../img/sprites_sections.png) -477px -559px no-repeat;
-            width:246px;
-            height:52px;
-            display:block;
-            margin-top: 95px;
-            margin-left: 15px;
-        }
+
     }
 
-    .suit_imagen{
-        background:url(../img/sprites_sections.png) -47px -183px no-repeat;
-        width:232px;
-        height:368px;
-        display:block;
-        margin-top: -21px;
-        margin-left:15px;
-        float:left;
-    }
+
 
     p{
         /*background:url(../img/sprites_sections.png) -477px -614px no-repeat;*/
@@ -876,14 +912,7 @@ footer{
 
         }
 
-        h2{
-            background:url(../img/sprites_sections.png) -1003px -677px no-repeat;
-            width:246px;
-            height:52px;
-            display:block;
-            margin-top: 95px;
-            margin-left: 15px;
-        }
+
     }
 
     .suit_imagen{
@@ -1147,3 +1176,101 @@ footer{
         }
     }
 }
+
+
+/******Portafolio ******/
+
+#portafolio-container{
+    width:720px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:red;
+    display:block;
+    li{
+        float:left;
+
+        a{
+            width:100%;
+            height:100%;
+            display:block;
+        }
+    }
+
+    .item-1{
+        width:240px;
+        height:185px;
+        background:url(../img/Portafolio.png) 0px 0px no-repeat;
+        margin-bottom: 5px;
+    }
+
+    .item-2{
+        width: 316px;
+        height: 185px;
+        background: url(../img/Portafolio.png) -242px 0px no-repeat;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .item-3{
+        width:272px;
+        height:166px;
+        background:url(../img/Portafolio.png) 0px -190px no-repeat;
+        margin-bottom: 5px;
+    }
+
+    .item-4{
+        width: 137px;
+        height: 92px;
+        background: url(../img/Portafolio.png) -279px -190px no-repeat;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .item-5{
+        width: 137px;
+        height: 92px;
+        background: url(../img/Portafolio.png) -421px -190px no-repeat;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .item-6{
+        width:278px;
+        height:152px;
+        background:url(../img/Portafolio.png) -279px -287px no-repeat;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .item-7{
+        width:272px;
+        height:247px;
+        background:url(../img/Portafolio.png) 0px -363px no-repeat;
+        margin-top: -83px;
+    }
+
+    .item-8{
+        width:277px;
+        height:163px;
+        background:url(../img/Portafolio.png) -280px -446px no-repeat;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .item-9{
+        clear:left;
+        width:130px;
+        height:92px;
+        background:url(../img/Portafolio.png) 0px -618px no-repeat;
+    }
+
+    .item-10{
+        width: 137px;
+        height: 92px;
+        background: url(../img/Portafolio.png) -136px -618px no-repeat;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+}
+

@@ -137,6 +137,7 @@ $(".employee_container").click(function(){
 $("#podemos_info_container .section-1 a").live("click",function(){
     var clase = $(this).attr("class");
     $("#podemos_info_container .section-1 a").removeClass("selected");
+    $("#podemos_info_container .section-2 a").removeClass("selected");
     $(this).addClass("selected");
 
     switch(clase){
@@ -177,6 +178,28 @@ $("#podemos_info_container .section-1 a").live("click",function(){
             console.log(clase);
         break;
     }
+});
+
+
+$("#podemos_info_container .section-2 a").live("click",function(){
+    $("#podemos_info_container .section-1 a").removeClass("selected");
+    $("#podemos_info_container .section-2 a").removeClass("selected");
+    $(this).addClass("selected");
+    var p = ' <ul id="portafolio-container">
+                  <li class="item-1"><a href="#" target="blank"></a></li>
+                  <li class="item-2"><a href="#" target="blank"></a></li>
+                  <li class="item-3"><a href="#" target="blank"></a></li>
+                  <li class="item-4"><a href="#" target="blank"></a></li>
+                  <li class="item-5"><a href="#" target="blank"></a></li>
+                  <li class="item-6"><a href="#" target="blank"></a></li>
+                  <li class="item-7"><a href="#" target="blank"></a></li>
+                  <li class="item-8"><a href="#" target="blank"></a></li>
+                  <li class="item-9"><a href="#" target="blank"></a></li>
+                  <li class="item-10"><a href="http://skooela.com" target="blank"></a></li>
+                </ul>';
+    $("#content").addClass("bounceOutDown");
+    bounceAnimation("Portafolio",p);
+
 });
 
 function bounceAnimation(titulo,info){
